@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1beta1
+kind: Component
+metadata:
+  name: auth-service
+  description: authentication service
+  tags:
+    - javascript
+  links:
+    - url: https://google.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: shopping-team
+  providesAPIs:
+    - auth-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: auth-api
+  description: Verify user authentication status
+spec:
+  type: openapi
+  lifecycle: production
+  owner: auth-team
+   
+
+
