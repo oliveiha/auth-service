@@ -15,7 +15,7 @@ spec:
     - resource:artists-db
   type: service
   lifecycle: production
-  owner: guests
+  owner: auth-team
   system: authentication-authorization
   providesApis:
     - auth-api
